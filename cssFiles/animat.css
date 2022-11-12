@@ -1,0 +1,148 @@
+
+.container2 {
+    position: relative; 
+    display:flex;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 275px;
+    height: 275px;
+    background: url('../pics/relax2.jpg');
+    background-size: cover;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fur {
+    position: absolute;
+    top: 30%;
+    left: -3px;
+    width: 50%;
+    height: 50%;
+}
+
+.fox {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+}
+
+.fox.fox1 {
+    top: 50%;
+    left: 100%;
+    transition: 2s;
+}
+
+.fox.fox2{
+    top: 100%;
+    left: 100%;
+}
+.container2:hover .fox1 {
+    top: 50%;
+    left: 45%;
+}
+
+p.text1 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: 2s;
+    font-size: smaller;
+}
+p.text2 {
+    color:rgb(251, 143, 12);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:0;
+    transform: rotate(30deg);
+    left:100%;
+    font-size: smaller;
+}
+.container2:hover p.text1 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+img.sun {
+    position:absolute;
+    width: 25%;
+    height: 25%;
+    right: -100%;
+}
+
+
+.container2:active img.sun {
+    animation: sun_move 2s infinite;
+}
+
+
+@keyframes sun_move {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: 70%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.container2:active .fox1 {
+    top:50%;
+    left:45%;
+    display:none;
+}
+
+.container2:active .fox2{
+    top: 50%;
+    left: 45%;
+}
+
+
+.container2:active p.text1{
+    display: none;
+}
+
+
+.container2:active p.text2{
+    top:30%;
+    left:10%;
+}
+
+.container2:active {
+    animation: shaking 2s infinite;
+}
+
+p.text3
+{
+    text-align: center;
+    font-size: large;
+    
+}
+@keyframes shaking {
+    0% {
+        margin-top: 5%;
+    }
+    25% {
+        margin-top: 0px;
+        margin-bottom: 5%;
+    }
+    50% {
+        margin-top: 5%;
+        margin-bottom: 0px;
+    }
+    75% {
+        margin-top: 0px;
+        margin-bottom: 5%;
+    }
+    100% {
+        margin-top: 5%;
+        margin-bottom: 0px;
+    }
+    
+}

@@ -1,0 +1,105 @@
+
+
+.containerL{
+    width:100px;
+    height:100px;
+    display:flex;
+    position:relative;
+    
+}
+.circle1{
+position: absolute;
+width: 81%;
+height: 74%;
+background: #000000;
+transform: rotate(-180deg);
+top:0;
+left: 7%;
+border-radius: 50%;
+}
+.circle2{
+position: absolute;
+width: 90%;
+height: 86%;
+/* background: rgb(253, 250, 215); */
+background: var(--bgcolor);
+transform: rotate(-180deg);
+top:3%;
+left: 2.8%;
+border-radius: 50%;
+
+}
+
+.circle4{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    background: var(--bgcolor);
+    border-radius: 50%;
+    border:2px solid black;
+    top:2%;
+    left:33%;
+}
+    .square1{
+        position: absolute;
+        width: 17%;
+        height: 17%;
+        background: var(--bgcolor);
+        border:2px solid black;
+        top:6%;
+        left:37%;
+}
+.square2{
+    position: absolute;
+    width: 17%;
+    height: 17%;
+    background: var( --bgcolor );
+    border:2px solid black;
+    top:6%;
+    left:37%;
+    transform: rotate(45deg);
+}
+.line{
+position: absolute;
+width: 12%;
+height: 0;
+background-color: #000000;
+border: 1px solid #000000;
+left:40%;
+top:6.5%;
+}
+.line1{
+    position: absolute;
+    width: 12%;
+    height: 0;
+    background-color: #000000;
+    border: 1px solid #000000;
+    left:40%;
+    top:25%;
+}
+.line2{
+        position: absolute;
+        width: 12%;
+        height: 0;
+        background-color: #000000;
+        border:1px solid #000000;
+        left:31%;
+        top:15%;
+        transform:rotate(90deg);
+ }
+        
+.line3{
+            position: absolute;
+            width: 12%;
+            height: 0;
+            background-color: #000000;
+            border: 1px solid #000000;
+            left:50%;
+            top:15%;
+            transform:rotate(90deg);
+}
+:root {
+    --bgcolor: rgb(225,207,203);
+    }
+       
+    

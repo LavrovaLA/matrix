@@ -1,0 +1,30 @@
+.main{
+    grid-area: main;
+    position:relative;
+    display: grid;
+    margin-top:5%;
+    justify-content: space-between;
+    grid-template-columns: 300px 300px;
+}
+.but_phrases{
+    font-size: 30px;
+    background-color: rgb(154, 135, 135);
+    text-align: center;
+    margin: 0;
+    width: 40%;
+    border: 2px solid rgb(119, 91, 91);
+    margin-left: 10%;
+}
+.but_phrases:hover{
+
+    border:2px solid rgb(95, 66, 66);
+    background-color: rgb(164, 144, 144);
+}
+
+@media (max-width: 1000px){
+    .main{
+        margin:5%;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 1fr;
+    }
+}

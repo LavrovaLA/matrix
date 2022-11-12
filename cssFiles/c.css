@@ -1,0 +1,224 @@
+
+body{
+    margin:0;
+    background-color: var(--backcolor);
+   
+}
+
+.grid{
+    width: 100%;
+    margin:0;
+    display:grid;
+    grid-template-columns: 1fr 100px 1fr ;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-areas: 
+    "header header header"
+    "sl1 logo sl2"
+    "aside aside aside"
+    "main main main"
+    "footer footer footer";
+}
+.header{
+    text-align: center;
+    grid-area: header;
+    font-weight: 100;
+    color:rgb(77, 75, 62);
+    /* background: linear-gradient(90deg, #cfecd0, #ffc5ca); */
+    background-image: url('../pics/back3.jpg');
+    border-bottom: 4px solid rgb(76,79,62);;
+}
+
+
+
+.aside{
+    grid-area: aside;
+}
+.main{
+    grid-area: main;
+    font-size: larger;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    padding-bottom: 10%;
+    justify-content: space-between;
+    
+}
+.footer{
+    grid-area: footer;
+    padding:0%;
+    background-color: var(--footercolor);
+}
+.logo{
+    grid-area:logo;
+    margin-top: 25%;
+
+}
+
+.cont{
+    height:auto;
+    display:grid;
+    width: 100%;
+    border:none;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+    "pn nc";
+}
+.MenuCont{
+    height:auto;
+    display:grid;
+    width: 100%;
+    height: 100%;
+    border:none;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 600px){
+    .cont{
+    height:auto;
+    display:grid;
+    width: 100%;
+    border:none;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "pn"
+    "pn"
+    "nc";
+
+    }
+    .MenuCont{
+        height:auto;
+        display:grid;
+        width: 100%;
+        height: 100%;
+        border:none;
+        grid-template-columns: 100% ;
+        grid-template-rows: auto auto auto;
+    }
+
+}
+.networks{
+
+    grid-area: nc;
+    border:none;
+    align-items: center;
+    text-align: center;
+    color:rgb(202, 173, 137);
+
+}
+.phone{
+    grid-area: pn;
+    align-items: center;
+    border:none;
+    text-align: center;
+    color:rgb(202, 173, 137);
+    
+
+}
+.grid .cont p{
+    margin-block-start:0;
+    margin-block-end: 0;
+    padding:0;
+    margin-top:-20px;
+}
+.aside p{
+    color: rgb(250, 226, 197); 
+    text-decoration: none;
+    font-size: small;
+}
+.grid .main p.p1{
+        text-align: center;
+        font-size: xx-large;
+        width: 100%;
+}
+.grid .main p.p2{
+    text-align: justify;
+    font-size: medium;
+    width: 100%;
+}
+
+.menu1{
+    align-items: center;
+    text-align: center;
+    background-color: var(--menucolor);
+    border: 2px solid var(--bordercolor);
+    margin: 3%;
+
+}
+
+
+.textSt{
+    color: var(--textBcolor);
+    text-decoration: none;
+    font-size: small;
+  }
+
+  .textSt:hover {
+    text-decoration: underline;
+    color:vae(--textBNcolor);
+  }
+
+  .textSt2{
+    color: var(--textBcolor);
+    text-decoration: none;
+    font-size:large;
+  }
+
+  .textSt2:hover {
+    text-decoration: underline;
+    color:var(--textBNcolor);
+  }
+  img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  
+  }
+  @font-face {
+	font-family: 'HeadFont'; 
+	src: url(font_Jura/Jura/Jura-Light.ttf); 
+    font-style: normal; 
+font-weight: normal;
+}
+.header p.pH1{
+    padding-top:5% ;
+    font-family: HeadFont; 
+    font-size:60px;
+    color:var(--textcolor);
+    margin: 0;
+
+}
+.header p.pH2{
+    margin-top:5% ;
+    margin-bottom:5% ;
+    font-family: sans-serif;
+    font-size : 20px;
+    color:var(--textcolor);
+
+}
+:root {
+    --backcolor: rgb(225,207,203);
+    --textcolor:rgb(90,73,66);
+    --footercolor:rgb(132, 101, 110);
+    --menucolor: rgb(118,117,123);
+    --bordercolor:rgb(76,79,62);
+    --textBcolor: rgb(250, 226, 197); 
+    --textBNcolor:rgb(234, 201, 161);
+    }
+       
+    @media (max-width: 315px){
+        .header p.pH1{
+            font-size:30px;
+
+        
+        }
+        .grid .main p.p1{
+            font-size:larger;
+            
+    }
+
+    
+    }
+    
