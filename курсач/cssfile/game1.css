@@ -1,0 +1,515 @@
+body{
+    background-color: rgb(175, 207, 205);
+    /* background-color: rgb(215, 215, 215); */
+}
+button{
+    border:0;
+    background: transparent;
+}
+
+.startCont{
+    display:grid;
+    grid-template-rows: 70px 40px 40px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 5%;
+}
+.dispNone{
+    display: none;
+    /* visibility: hidden; */
+    /* opacity:0; */
+}
+.startCont.dispNonen{
+    display: none;
+}
+
+.inp{
+    background-color:rgb(161, 190, 188) ;
+    font-size: 20px;
+}
+
+
+.keys{
+    position: fixed;
+    width: 30%;
+    display:grid;
+    grid-template-rows: 65px 65px 65px 65px;
+}
+#mainPage{
+    width: 180px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 0;
+    border:none;
+    /* margin-top: 20px; */
+    color:white;
+    background-color: rgb(153, 174, 173);
+}
+
+button#buttonStart{
+    width: 180px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 0;
+    border:none;
+    /* margin-top: 20px; */
+    color:white;
+    background-color: rgb(153, 174, 173);
+}
+
+#restart{
+    margin-top: 17px;
+    width: 180px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 0;
+    /* margin-top: 155px; */
+    color:white;
+}
+#buttonStart:hover{
+    color:rgb(139, 126, 123)
+}
+#restart:hover{
+    color:rgb(139, 126, 123)
+}
+#butModal:hover{
+    color:rgb(231, 231, 231)
+}
+#rating:hover{
+    color:rgb(231, 231, 231)
+}
+
+
+#buttonStart:hover{
+    color:rgb(231, 231, 231)
+}
+#restart:hover{
+    color:rgb(231, 231, 231)
+}  
+
+
+#butModal {
+    margin-left: 0px;
+    width: 180px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    color:white;
+    background-color: rgb(153, 174, 173);
+    border: none;
+}
+.choseLevel{
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    border:1px dashed black ;
+    background-color: rgb(160, 166, 171);
+
+}
+.choseLevel.colourLvl{
+    background-color: rgb(203, 211, 218);
+}
+.choseLevel:hover{
+    background-color: rgb(203, 211, 218);
+}
+.modal {
+    /* display: none;  */
+    /* padding-top: 200px; */
+    padding-left: 0px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    /* background-color: rgba(0,0,0,0.3);   */
+}
+.modal.dispNone{
+    display: none;
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: rgb(208, 231, 229);
+    /* margin-left:50%; */
+    padding: 0;
+    margin-top: 0;
+    border: 3px solid  rgb(81, 95, 94);
+    width: 200px;
+    
+}
+
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+.close:hover{
+    color: rgb(152, 152, 152);
+    cursor: pointer; 
+
+}
+.colRestart{
+    background-color: rgb(153, 174, 173);
+
+}
+
+.text{
+    text-align: center;
+    font-size: 15px;
+    color:rgb(94, 71, 44);
+    padding-left: 5%;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    color:rgb(94, 71, 44);
+}
+h3{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 45px;
+    color:rgb(94, 71, 44);
+}
+.colourRed{
+    color:red;
+}
+.colourGreen{
+    color:green;
+}
+
+#complete{
+    background: transparent;
+    margin-top: 25%;
+    margin-left: 1400px;
+    border:none;
+    font-size: 40px;
+}
+#complete.colourC{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+#scores{
+    font-size: 40px;
+    margin-left:80%;
+    color:rgb(94, 71, 44);
+}
+.place{
+    position:absolute;
+    border:3 px solid black;
+    margin-top:20%;
+    margin-left: 40%;
+    width: 200px;
+    height: 200px;
+}
+#frogImage{
+    background: transparent;
+    border: none;
+    margin-left: 40%;
+    margin-top: 0%;
+    width: 200px;
+    position: absolute;
+    transition: 2s;
+}
+#nextGame{
+    margin-top: 43%;
+    margin-left: 43%;
+    font-size: 30px;
+    background-color:rgb(223, 237, 236);
+    color:rgb(108, 120, 119);
+    border:1px solid rgb(255, 255, 255);
+}
+#nextGameL2{
+    margin-top: 27%;
+    margin-left: 43%;
+    position: fixed;
+    font-size: 30px;
+    background-color:rgb(223, 237, 236);
+    color:rgb(108, 120, 119);
+    border:1px solid rgb(255, 255, 255);
+}
+#nextGame2{
+    margin-top:5%;
+    margin-left: 40%;
+    font-size: 30px;
+    width: 150px;
+    background-color:rgb(223, 237, 236);
+    color:rgb(108, 120, 119);
+    border:1px solid rgb(255, 255, 255);
+}
+#nextGameF2{
+    margin-top:5%;
+    margin-top: 43%;
+    margin-left: 43%;
+    font-size: 30px;
+    background-color:rgb(223, 237, 236);
+    color:rgb(108, 120, 119);
+    border:1px solid rgb(255, 255, 255);
+}
+#nextGameF3{
+    margin-top:5%;
+    margin-top: 43%;
+    margin-left: 43%;
+    font-size: 30px;
+    background-color:rgb(223, 237, 236);
+    color:rgb(108, 120, 119);
+    border:1px solid rgb(255, 255, 255);
+}
+h4{
+    font-size: 30px;
+    color:rgb(94, 71, 44);
+
+}
+.keys.dispNone{
+    display: none;
+    /* visibility: hidden; */
+}
+.startGam{
+    margin-top: 25px;
+    height: 40px;
+    color:white;
+    background-color: rgb(153, 174, 173);
+    font-size: 30px;
+}
+.startGam:hover{
+    color: rgb(152, 152, 152);
+    cursor: pointer; 
+
+}
+#rating{
+    margin-top: 20px;
+    color:white;
+    background-color: rgb(153, 174, 173);
+    font-size: 30px;
+}
+#rating:hover{
+    color: rgb(152, 152, 152);
+    cursor: pointer; 
+
+}
+.inp{
+    background-color: rgb(209, 230, 229);
+}
+.modal.dispNone{
+    display: none;
+}
+.modal-content.dispNone{
+    display: none;
+}
+.nameG{
+    margin-top: 5%;
+    margin-left:25%;
+}
+.ent{
+    font-size: 18px;
+    color: rgb(53, 61, 61);
+}
+.cont2{
+    margin-left: -40%;
+    display: grid;
+    grid-template-rows: 40px 40px;
+
+}
+button#buttonLamp{
+
+    margin-top: 0;
+}
+button#buttonLampU{
+
+    margin-top: 300px;
+}
+.cont2.dispNone{
+    display: none;
+}
+#time{
+    margin-left: 65%;
+    margin-top: 50px;
+    width: 150px;
+    font-size: 30px;
+    color:rgb(114, 81, 60);
+}
+#timer.colour{
+    color:rgb(248, 84, 47);
+}
+
+
+.bordC{
+    background-color: white;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+button#timer{
+    margin-left: 65%;
+    margin-top: 280px;
+    font-size: 30px;
+    width: 150px;
+    color:rgb(78, 152, 72);
+
+}
+.bord{
+    border: 3px solid rgb(147, 121, 87);
+    background-color: rgb(255, 249, 195);
+    border-radius: 5%;
+    padding-left: 10px;;
+    padding-right: 10px;
+}
+#total{
+    font-size: 30px;
+    color:rgb(94, 71, 44);
+}
+#mouse{
+    background: transparent;
+    border:none;
+
+    
+}
+.canvas{
+    margin-top: -5%;
+    margin-left:400px;
+}
+#timerMouse{
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 0;
+}
+.mouseSad{
+    width: 100px;
+    height: 100px;
+}
+.listRat{
+    margin-left: 40%;
+    font-size: 30px;
+    margin-top: 5%;
+    color: rgb(81, 74, 55);
+}
+.listRat.dispNone{
+display: none;
+}
+.contLvls{
+    margin-left: 10px;
+    margin-top: 10px;
+display: grid;
+grid-template-columns: 90px 90px 90px;
+}
+.contLamp2.dispNone{
+    display: none;
+}
+.contLamp2{
+    display: grid;
+    grid-template-areas: 
+    "a a2" "u u2";
+}
+
+button#buttonLampL2{
+    grid-area: a;
+    margin-left: 25%;
+    margin-top: 10px;
+    transition: 1s;
+}
+button#buttonLamp2L2{
+    grid-area: a2;
+    margin-left:-65%;
+    margin-top: 10px;
+    transition: 1s;
+}
+button#buttonLampUL2{
+    grid-area: u;
+    position: fixed;
+    margin-left: 25%;
+    margin-top: 300px;
+} 
+
+button#buttonLampU2L2{
+    grid-area: u2;
+    position: fixed;
+    margin-left: 51%;
+    margin-top: 300px;
+}
+#timeL2{
+    margin-left: 26.5%;
+    margin-top: 250px;
+    min-width: 150px;
+    position: fixed;
+    font-size: 20px;
+    color:rgb(114, 81, 60);
+}
+#time2L2{
+    margin-left: 52%;
+    margin-top: 250px;
+    position: fixed;
+    min-width: 150px;
+    font-size: 20px;
+    color:rgb(114, 81, 60);
+}
+#timerL2{
+    margin-left: 26.5%;
+    margin-top: 500px;
+    min-width: 150px;
+    position: fixed;
+    font-size: 20px;
+    color:rgb(78, 152, 72);
+
+}
+#timer2L2{
+    margin-left: 52%;
+    margin-top: 500px;
+    min-width: 150px;
+    position: fixed;
+    font-size: 20px;
+    color:rgb(78, 152, 72);
+
+}
+#lampSec{
+    font-size: 70px;
+    margin-top: 45px;
+    color: rgb(80, 82, 82);
+}
+.place.dispNone{
+    display: none;
+}
+.place2.dispNone{
+    display: none;
+}
+.place2{
+    position:absolute;
+    border:3 px solid black;
+    margin-top:28%;
+    margin-left: 41%;
+    width: 200px;
+    height: 200px;
+}
+
+#timerL2.color{
+    color:rgb(248, 84, 47);
+}
+#timer2L2.color{
+    color:rgb(248, 84, 47);
+}
+#returnBack{
+    margin-left: 45%;
+    margin-top: 5%;
+    background-color: rgb(163, 183, 177);
+    font-size: 30px;
+    width: 150px;
+    border: 1px dashed black;
+    color:rgb(43, 40, 37)
+
+}
+#returnBack:hover{
+    background-color: rgb(195, 201, 204);
+}
+#fakeLampL2{
+    position: absolute;
+    left: 30px;
+    margin-top: 10px;
+    transition: 1s;
+}

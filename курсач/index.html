@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssfile/game1.css">
+</head>
+<body>
+
+
+
+    <div class = "rating dispNone"></div>
+
+    <div class = "keys dispNone">
+        <h4 class = "dispNone" id = "name"></h4>
+        <h3 class = "lvl dispNone">уровень 1</h3>
+        <button class = "dispNone" id = "buttonStart">начать</button>
+        <button class = "dispNone" id="butModal">правила</button>
+        <button id = "mainPage">главная</button>
+        <button id="rules" class="modal dispNone">
+            <div class="modal-content">
+              <span class="close">&times;</span></h2>
+              <h2> Правила:<br>
+            <h class = "text"></h>
+        </div> 
+
+            <button class = "dispNone" id="restart"></button>
+            <button class = "dispNone" id = "lampSec"></button>
+             <button class = "dispNone" id = "complete"></button> 
+        </div>
+        <button class = "dispNone" id = "scores">баллы:0</button>
+
+<!-------------------------- лампы уровень 2 -------------------------->
+    <div class ="contLamp2 dispNone" id = "contlamp2">
+            <button id = "buttonLampUL2"></button>
+            <button id="buttonLampL2"></button>
+            <button id = "buttonLampU2L2"></button>
+            <button id="buttonLamp2L2"></button>
+        <button class = "dispNone" id="fakeLampL2"></button>
+        <button id="timerL2"></button>
+        <button id="timeL2"></button>
+        <button id="timer2L2"></button>
+        <button id="time2L2"></button>
+    </div>
+<!----------------------------- мышь уровень 1 ------------------------->
+        <div class = "cont3 dispNone" id = "container3">
+            <canvas id = "canv" class = "canvas">
+            </canvas>
+            <img id = "mouse" src = "images/m1.png" / width="180" height="90"></img>
+
+        </div>
+        <button id = "timerMouse" class = "dispNone"></button>
+
+        <!--------------- лампы ---------------->
+        <div class ="cont2 dispNone" id = "container2"> 
+            <button id = "buttonLampU"></button>
+            <button id="buttonLamp"></button>
+            <button id="time"></button>
+            <button id="timer"></button>
+        </div>
+
+        <button class = "dispNone" id = "nextGame2">дальше</button>
+        <button class = "dispNone" id = "nextGameL2">дальше</button>
+
+        <!-- лягушка -->
+        <div class = "cont1" id = "container1">
+            <img class = "place dispNone" src = "images/kyvs.png"></img>
+            <img class = "place2 dispNone" src = "images/kyvs.png"></img>
+            <img id = "frogImage" class = "dispNone"></img>
+            <button class = "dispNone" id = "nextGame">дальше</button>
+            <button class = "dispNone" id = "nextGameF2">дальше</button>
+            <button class = "dispNone" id = "nextGameF3">дальше</button>
+        </div>
+        <img id ="nameGame" class = "nameG"  src = "images/name.png"></img>
+
+        <!-- главная -->
+        <div class = "startCont">
+            <h5 class = "ent"></h5>
+            <input placeholder="Введите имя" type="text" class="inp">
+            <div class = "contLvls"> 
+                <button id = "lvl1" class = "choseLevel"> 1 ур</button>
+                <button id = "lvl2"class = "choseLevel">2 ур</button>
+                <button id = "lvl3"class = "choseLevel">3 ур</button>
+            </div>
+            <button class = "startGam"id = "startAut">Начать игру</button>
+            <button id = "rating">рейтинг</button>
+            
+</div>
+<button class = "listRat dispNone" id = "listRating"></button>
+<button class = "dispNone" id = "returnBack">обратно</button>
+</body>
+<script src = jsfile/game1.js></script>
+</html>
